@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allScreenBackground"
+    >
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:titleCondensed="Profile" />
+
+    <item
+        android:id="@+id/my_offers"
+        android:title="My Offers"
+        android:icon="@drawable/ic_offers"
+    app:showAsAction="ifRoom"
+    android:textColor="@color/black"
+    android:titleCondensed="Offers" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+    app:showAsAction="ifRoom"
+    android:textColor="@color/black"
+    android:titleCondensed="Logout" />
+</menu>

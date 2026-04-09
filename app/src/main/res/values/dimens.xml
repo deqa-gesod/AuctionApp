@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="edit_text_left_padding">16dp</dimen>
+    <dimen name="frame_layout_margin">12dp</dimen>
+    <dimen name="dialog_title_padding_top">14dp</dimen>
+
+</resources>

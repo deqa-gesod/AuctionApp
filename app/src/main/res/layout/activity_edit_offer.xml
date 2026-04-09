@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/allScreenBackground"
+    android:layout_height="match_parent"
+    tools:context=".EditOfferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#C2185B"
+            app:titleTextColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/offer_name_edit_text"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#F3F6F6"
+            android:fontFamily="@font/montserratextrabold"
+            android:hint="Name"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/offer_description_edit_text"
+            android:layout_width="320dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#F3F6F6"
+            android:fontFamily="@font/montserratextrabold"
+            android:hint="Description"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/offer_phone_number_edit_text"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#F3F6F6"
+            android:fontFamily="@font/montserratextrabold"
+            android:hint="Phone Number"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="180sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserratextrabold"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Save"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</ScrollView>

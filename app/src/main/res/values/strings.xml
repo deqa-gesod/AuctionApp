@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Auction MM</string>
+    <string name="title_activity_sell">SellActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="welcome_to_auction">WELCOME TO AUCTION APP</string>
+    <string name="post">Post</string>
+    <string name="lot">Lot</string>
+    <string name="auctioneer">Auctioneer</string>
+    <string name="in_the_development_stage">In the development stage</string>
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>NOK</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="country_array">
+        <item>Norway</item>
+        <item>Kyrgyzstan</item>
+        <item>Tajikistan</item>
+        <item>Kazakhstan</item>
+        <!-- Add more countries as needed -->
+    </string-array>
+
+</resources>

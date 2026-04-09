@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/custom_edittext.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When the EditText is focused -->
+
+    <!-- Default state -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="2dp" />
+            <stroke android:color="@color/activeColor" android:width="2dp" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+</selector>
