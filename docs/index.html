@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AuctionApp — Interactive Demo</title>
+  <meta name="description" content="Clickable mockup of AuctionApp, an Android auction app built with Java and Firebase Realtime Database." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="screenshots/auctionapp-logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>AuctionApp <span class="muted">— Interactive Demo</span></h1>
+      <p class="subtitle">A clickable mockup of an Android auction app built in Java with Firebase Realtime Database. Group project (MOB3000, USN, autumn 2024).</p>
+    </div>
+  </header>
+
+  <div class="banner" role="note">
+    <strong>Interactive mockup.</strong> These are screenshots of the real Android app. Tap the screen or use the buttons below to walk through the flow.
+    <a href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">Source on GitHub</a>.
+  </div>
+
+  <main class="container demo-grid">
+    <section class="phone-column">
+      <div class="flow-toggle" role="tablist" aria-label="Choose flow">
+        <button class="flow-btn is-active" data-flow="user" role="tab" aria-selected="true">User flow</button>
+        <button class="flow-btn" data-flow="admin" role="tab" aria-selected="false">Admin flow</button>
+      </div>
+
+      <div class="phone" aria-label="Phone preview">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen">
+          <img id="screen-img" alt="" />
+          <div class="hotspot-layer" id="hotspots"></div>
+          <div class="screen-caption" id="screen-caption"></div>
+        </div>
+        <div class="phone-home" aria-hidden="true"></div>
+      </div>
+
+      <div class="nav-row">
+        <button id="back-btn" class="nav-btn" aria-label="Previous screen">Back</button>
+        <div class="screen-indicator">
+          <span id="step-current">1</span> / <span id="step-total">5</span>
+        </div>
+        <button id="next-btn" class="nav-btn primary" aria-label="Next screen">Next</button>
+      </div>
+
+      <button id="restart-btn" class="link-btn" type="button">Restart flow</button>
+    </section>
+
+    <aside class="info-column">
+      <article class="card">
+        <h2 id="screen-title">Welcome</h2>
+        <p id="screen-desc">Walk through the AuctionApp experience screen by screen. Pick a flow above to see how a regular bidder or an admin uses the app.</p>
+
+        <h3>About the project</h3>
+        <ul>
+          <li><strong>Platform:</strong> Android (Java)</li>
+          <li><strong>Backend:</strong> Firebase Realtime Database + Firebase Auth</li>
+          <li><strong>Role:</strong> Database engineer and full-stack on CRUD layer</li>
+          <li><strong>Team size:</strong> 4 students, one semester</li>
+        </ul>
+
+        <h3>What it does</h3>
+        <p>Admin lists auction items with images, start price, and a deadline. Regular users browse and place bids. Bids sync across devices in real time via Firebase. When the deadline passes, the item is moved to <code>sold_products</code> and the highest bid wins.</p>
+
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">View source code</a>
+          <a class="cta secondary" href="https://deqa.no" target="_blank" rel="noopener">deqa.no</a>
+        </div>
+      </article>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Built by <a href="https://deqa.no" target="_blank" rel="noopener">Deqa Gesod</a>.
+        Repository: <a href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">github.com/deqa-jaja/AuctionApp</a>.
+      </p>
+      <p class="muted small">This is a static demo. The real AuctionApp runs on Android with Firebase Realtime Database.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
