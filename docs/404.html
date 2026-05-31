@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Not found — AuctionApp</title>
+  <meta name="theme-color" content="#fafaf9" />
+  <link rel="icon" type="image/png" href="screenshots/auctionapp-logo.png" />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: #fafaf9; color: #1a1614;
+      font-family: 'Inter var', 'Inter', -apple-system, sans-serif;
+      font-size: 16px; line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .wrap {
+      max-width: 480px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .code {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #fdf2eb;
+      color: #c2410c;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    p {
+      margin: 0 0 24px;
+      color: #6b655e;
+    }
+    .links {
+      display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex; align-items: center;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background .15s, border-color .15s;
+    }
+    .btn.primary {
+      background: #1a1614; color: #fff;
+    }
+    .btn.primary:hover { background: #c2410c; }
+    .btn.secondary {
+      background: transparent;
+      color: #1a1614;
+      border: 1px solid #ebe6df;
+    }
+    .btn.secondary:hover { border-color: #1a1614; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="code">404</span>
+    <h1>That page got outbid.</h1>
+    <p>The page you were looking for is not part of the AuctionApp demo. Head back to the walkthrough or to the case study.</p>
+    <div class="links">
+      <a class="btn primary" href="/AuctionApp/">Back to demo</a>
+      <a class="btn secondary" href="https://deqa.no">deqa.no</a>
+    </div>
+  </div>
+</body>
+</html>

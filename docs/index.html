@@ -4,22 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>AuctionApp — Interactive Demo</title>
-  <meta name="description" content="Clickable mockup of AuctionApp, an Android auction app built with Java and Firebase Realtime Database." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Interactive walkthrough of AuctionApp, an Android auction app built in Java with Firebase Realtime Database. Group project at USN, autumn 2024." />
+  <meta name="theme-color" content="#fafaf9" />
+  <meta name="author" content="Deqa Gesod" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AuctionApp — Interactive Demo" />
+  <meta property="og:description" content="A clickable walkthrough of an Android auction app built in Java with Firebase. Group project at USN, autumn 2024." />
+  <meta property="og:url" content="https://deqa-gesod.github.io/AuctionApp/" />
+  <meta property="og:image" content="https://deqa-gesod.github.io/AuctionApp/screenshots/auctionapp-product-list.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AuctionApp — Interactive Demo" />
+  <meta name="twitter:description" content="A clickable walkthrough of an Android auction app built in Java with Firebase." />
+  <meta name="twitter:image" content="https://deqa-gesod.github.io/AuctionApp/screenshots/auctionapp-product-list.png" />
+
   <link rel="icon" type="image/png" href="screenshots/auctionapp-logo.png" />
+  <link rel="canonical" href="https://deqa-gesod.github.io/AuctionApp/" />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav class="top-nav">
+    <a class="top-back" href="https://deqa.no" target="_blank" rel="noopener">&larr; deqa.no</a>
+    <span class="top-meta">Case study &middot; AuctionApp</span>
+  </nav>
+
   <header class="site-header">
     <div class="container">
-      <h1>AuctionApp <span class="muted">— Interactive Demo</span></h1>
-      <p class="subtitle">A clickable mockup of an Android auction app built in Java with Firebase Realtime Database. Group project (MOB3000, USN, autumn 2024).</p>
+      <div class="chip-row">
+        <span class="chip">Interactive mockup</span>
+        <span class="chip chip-muted">Android &middot; Java &middot; Firebase</span>
+      </div>
+      <h1>AuctionApp</h1>
+      <p class="lede">A clickable walkthrough of an Android auction app built in Java with Firebase Realtime Database. Group project at USN, autumn 2024.</p>
     </div>
   </header>
-
-  <div class="banner" role="note">
-    <strong>Interactive mockup.</strong> These are screenshots of the real Android app. Tap the screen or use the buttons below to walk through the flow.
-    <a href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">Source on GitHub</a>.
-  </div>
 
   <main class="container demo-grid">
     <section class="phone-column">
@@ -28,22 +48,18 @@
         <button class="flow-btn" data-flow="admin" role="tab" aria-selected="false">Admin flow</button>
       </div>
 
-      <div class="phone" aria-label="Phone preview">
-        <div class="phone-notch" aria-hidden="true"></div>
-        <div class="phone-screen">
-          <img id="screen-img" alt="" />
+      <figure class="screen-card" aria-label="Phone preview">
+        <div class="screen-canvas">
+          <img id="screen-img" data-fade alt="" />
           <div class="hotspot-layer" id="hotspots"></div>
-          <div class="screen-caption" id="screen-caption"></div>
         </div>
-        <div class="phone-home" aria-hidden="true"></div>
-      </div>
+        <figcaption class="screen-caption" id="screen-caption">&nbsp;</figcaption>
+      </figure>
 
       <div class="nav-row">
-        <button id="back-btn" class="nav-btn" aria-label="Previous screen">Back</button>
-        <div class="screen-indicator">
-          <span id="step-current">1</span> / <span id="step-total">5</span>
-        </div>
-        <button id="next-btn" class="nav-btn primary" aria-label="Next screen">Next</button>
+        <button id="back-btn" class="nav-btn" aria-label="Previous screen">&larr; Back</button>
+        <div class="screen-indicator"><span id="step-current">1</span> / <span id="step-total">5</span></div>
+        <button id="next-btn" class="nav-btn primary" aria-label="Next screen">Next &rarr;</button>
       </div>
 
       <button id="restart-btn" class="link-btn" type="button">Restart flow</button>
@@ -54,19 +70,16 @@
         <h2 id="screen-title">Welcome</h2>
         <p id="screen-desc">Walk through the AuctionApp experience screen by screen. Pick a flow above to see how a regular bidder or an admin uses the app.</p>
 
-        <h3>About the project</h3>
-        <ul>
-          <li><strong>Platform:</strong> Android (Java)</li>
-          <li><strong>Backend:</strong> Firebase Realtime Database + Firebase Auth</li>
-          <li><strong>Role:</strong> Database engineer and full-stack on CRUD layer</li>
-          <li><strong>Team size:</strong> 4 students, one semester</li>
-        </ul>
-
-        <h3>What it does</h3>
-        <p>Admin lists auction items with images, start price, and a deadline. Regular users browse and place bids. Bids sync across devices in real time via Firebase. When the deadline passes, the item is moved to <code>sold_products</code> and the highest bid wins.</p>
+        <dl class="meta-list">
+          <dt>Platform</dt><dd>Android, Java</dd>
+          <dt>Backend</dt><dd>Firebase Realtime Database, Firebase Auth, Firebase Storage</dd>
+          <dt>Role</dt><dd>Database engineer, full-stack on CRUD layer</dd>
+          <dt>Team</dt><dd>Four students, one semester</dd>
+          <dt>Course</dt><dd>MOB3000, USN, autumn 2024</dd>
+        </dl>
 
         <div class="cta-row">
-          <a class="cta" href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">View source code</a>
+          <a class="cta" href="https://github.com/deqa-gesod/AuctionApp" target="_blank" rel="noopener">View source</a>
           <a class="cta secondary" href="https://deqa.no" target="_blank" rel="noopener">deqa.no</a>
         </div>
       </article>
@@ -75,13 +88,17 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>
-        Built by <a href="https://deqa.no" target="_blank" rel="noopener">Deqa Gesod</a>.
-        Repository: <a href="https://github.com/deqa-jaja/AuctionApp" target="_blank" rel="noopener">github.com/deqa-jaja/AuctionApp</a>.
-      </p>
-      <p class="muted small">This is a static demo. The real AuctionApp runs on Android with Firebase Realtime Database.</p>
+      <p>Built by <a href="https://deqa.no" target="_blank" rel="noopener">Deqa Gesod</a> &middot; Skui, Norway</p>
     </div>
   </footer>
+
+  <noscript>
+    <div style="padding:24px;background:#fdf2eb;border-top:1px solid #ebe6df;text-align:center;color:#1a1614;font-family:-apple-system,sans-serif">
+      This interactive walkthrough needs JavaScript. View the project source at
+      <a href="https://github.com/deqa-gesod/AuctionApp" style="color:#c2410c">github.com/deqa-gesod/AuctionApp</a>
+      or read the full case study at <a href="https://deqa.no" style="color:#c2410c">deqa.no</a>.
+    </div>
+  </noscript>
 
   <script src="app.js" defer></script>
 </body>
